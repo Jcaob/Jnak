@@ -19,5 +19,5 @@ function draw() {
     b=1;
   }
   circle(200,150,b)
-  circle(mouseX, mouseY, 30);
+  circle(mouseX , mouseY , 30);
 }
