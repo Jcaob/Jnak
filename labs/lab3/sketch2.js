@@ -11,14 +11,14 @@ background(128, 128, 128);
   {
     
     circle (400,400,o*10)
-    noFill();
+    noFill()
   }
   
   
  noFill();
  
     
-    for (let i = 0; i < 25; ++ i) {
+    for (let i = 0; i < 25; i++) {
         let x = i*50; 
         
         if (i % 3 == 0 && i % 5 == 0) {
@@ -44,8 +44,6 @@ background(128, 128, 128);
         noFill()
     }
     for (let r = 0; r <= nr; r++) {
-      
-      
       for (let c = 0; c <= r ; c++) {
          fill(255,0,0)
         square(c * 25, r * 25, 25);
