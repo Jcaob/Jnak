@@ -1,12 +1,12 @@
 
-let circleX = 100;
+let circleX = 250;
 let circleY = 0;
-let xSpeed = 2;
-let ySpeed = 2;
+let xSpeed = 3;
+let ySpeed = 3;
 let rectX = 0;
 let rectY= 450;
 let rectW = 500;
-let rectH = 100;
+let rectH = 50;
 
 function setup() {
   createCanvas(500, 500);
@@ -30,11 +30,17 @@ function draw() {
   }
 
   
-  if(circleY < 0 || circleY > height-75 ) {
+  if(circleY < 0 ||circleY > height ) {
     ySpeed = ySpeed * -1;
   }
 
-  
+  if(collideRect(circleX, circleY+25, rectX, rectY, rectW, rectH))
+  {
+    ySpeed = ySpeed * -1;
+    xSpeed = xSpeed * +1;
+    console.log(collideRect)
+    
+  }
   rect(rectX,rectY,rectW,rectH);
 }
 
