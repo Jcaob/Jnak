@@ -17,4 +17,5 @@ function draw() {
   square(160, 110, 25,10);
   arc(160, 140, 50, 50, 0, PI + QUARTER_PI);
   ellipse(56, 46, 55, 55);
+  text("help",100,0)
 }
