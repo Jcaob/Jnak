@@ -30,17 +30,19 @@ var myRect2 = {
   height: 25,
   width: 50
 }
+// all the objects that make up the drawing 
 function setup() {
   createCanvas(500, 500);
 }
-
+//to make the canvas
 function draw() {
   
     drawH();
     drawI();
-  
+
     text("Press backspace to watch it be drawn again ",10,10)
 }
+// calls on the functions that makes the H and the I
 function drawH ()
 {
   myCircle.y = myCircle.y +1;
@@ -68,6 +70,7 @@ function drawH ()
     myCircle2.y = 20;
   }
 }
+//Used to Draw the H
 function drawI(){
   myRect.y = myRect.y +1;
   
@@ -80,6 +83,7 @@ function drawI(){
   fill(myRect2.color)
   rect(myRect2.x, myRect2.y, myRect2.width, myRect2.height)
 }
+// used to draw the I
 function keyPressed()
  {
   if(keyCode === BACKSPACE){
@@ -87,3 +91,4 @@ function keyPressed()
     clear();
   }
  }
+ //fun ction used to clear the board and watch it be drawn again
