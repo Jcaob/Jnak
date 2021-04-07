@@ -91,4 +91,4 @@ function keyPressed()
     clear();
   }
  }
- //fun ction used to clear the board and watch it be drawn again
+ //function used to clear the board and watch it be drawn again
