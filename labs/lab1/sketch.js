@@ -49,7 +49,7 @@ class Ground {
      
       if(hits > 10){
         hits = 0;
-        this.blueA += 2;
+        this.blueA += 10;
         this.color = [0,0,this.blueA]
         // this is here to check and see if the ground has been hit 10 time and if it has it changes the color
       }
