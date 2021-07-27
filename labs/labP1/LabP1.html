@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <script src="libraries/p5.min.js"></script>
+    
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <div id="Fun" style="font-size: 30px;">Connect 4</div>
+    <div id="Instructions">Place a square in one of the spaces and connect 4 to win! Start at the Bottom</div>
+    <svg id = "Zone" width="200" height="160">
+      <rect class="space"x="0" y="0" width="140" height="140" stroke="black" fill="transparent" stroke-width="1"/>
+      <line class="space" x1="0" y1="20" x2="140" y2="20" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="0" y1="40" x2="140" y2="40" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="0" y1="60" x2="140" y2="60" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="0" y1="80" x2="140" y2="80" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="0" y1="100" x2="140" y2="100" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="0" y1="120" x2="140" y2="120" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="0" y1="140" x2="140" y2="140" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="20" y1="0" x2="20" y2="140" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="40" y1="00" x2="40" y2="140" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="60" y1="0" x2="60" y2="140" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="80" y1="0" x2="80" y2="140" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="100" y1="0" x2="100" y2="140" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="120" y1="0" x2="120" y2="140" style="stroke:rgb(0,0,0);stroke-width:2" />
+      <line class="space" x1="140" y1="0" x2="140" y2="140" style="stroke:rgb(0,0,0);stroke-width:2" />
+     
+<rect>
+      
+    </svg>
+    <div id="Playerturn"style="font-size: 30px;">Player 1's Turn</div>
+    <div id="Winner"style="font-size: 30px;"></div>
+  <button id = "j" onclick="p.reload()">Reset Board</button>
+  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="sketchP1.js"></script>
+  </body>
+</html>

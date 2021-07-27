@@ -4,7 +4,7 @@ let Div = document.getElementsByClassName("Yep")
 
 for(let i = 0; i < Div.length; i++){
     TweenLite.from(Div[i],
-        {duration: .3, x: -100, alpha: 0, delay: i }
+        {duration: .2, x: -100, alpha: 0, delay: i }
         );
 }
 
