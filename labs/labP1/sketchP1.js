@@ -142,7 +142,7 @@ TweenLite.from(F,
 
 for(let i = 0; i < Div.length; i++){
     TweenLite.from(Div[i],
-        {duration: .8, y: 100, alpha: 0}
+        {duration: .8, y: 100, alpha: 0, }
         );
 }
 
