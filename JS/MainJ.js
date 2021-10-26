@@ -1,3 +1,5 @@
+Da = document.getElementById("Description")
+
 let sidebar = document.querySelector(".sidebar");
   let closeBtn = document.querySelector("#btn");
   let searchBtn = document.querySelector(".bx-search");
@@ -20,3 +22,38 @@ let sidebar = document.querySelector(".sidebar");
      closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
    }
   }
+
+
+
+  function Hover1(){
+    Da.innerHTML ="Click on me to learn more about me"
+    TweenLite.from(Da,
+      {duration: .9,  alpha: 0}
+    );
+  }
+  function Hover2(){
+    Da.innerHTML ="Click on me to find out more on the world i created"
+    TweenLite.from(Da,
+      {duration: .9,  alpha: 0}
+    );
+  }
+  function Hover3(){
+    Da.innerHTML ="Click on me to see my resume"
+    TweenLite.from(Da,
+      {duration: .9,  alpha: 0}
+    );
+  }
+  function Hover4(){
+    Da.innerHTML ="Click on me to see some of my old projects"
+    TweenLite.from(Da,
+      {duration: .9,  alpha: 0}
+    );
+  }
+
+  function out(){
+    Da.innerHTML=""
+    TweenLite.from(Da,
+      {duration: .9, alpha: 10}
+    );
+  }
+  

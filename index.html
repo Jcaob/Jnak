@@ -2,6 +2,7 @@
 <!-- Created by CodingLab |www.youtube.com/CodingLabYT-->
 <html lang="en" dir="ltr">
   <head>
+    
     <meta charset="UTF-8">
     <!--<title> Responsive Sidebar Menu  | CodingLab </title>-->
     <link rel="stylesheet" href="stylesheets/style.css">
@@ -60,42 +61,48 @@
       <div class="text">Hello</div>
       <div class="cards-list">
   
-        <div class="card 1">
+        <div class="card 1" onmouseover="Hover1()" onmouseout="out()">
           <div class="card_image"> <img src="/Assets/boi.JPG" /> </div>
           <div class="card_title title-white">
-            <p>Learn About Me</p>
+            <a class="card_title title-white" href="/HTML/AbMe.html">About me</a>
           </div>
         </div>
         
-          <div class="card 2">
+          <div class="card 2" onmouseover="Hover2()" onmouseout="out()">
+              
           <div class="card_image">
-            <img src="/Assets/World Map.JPG" />
+            <img src="/Assets/World Map.JPG" width="inherit" height="inherit" />
+            
             </div>
           <div class="card_title title-white">
-            <p>Dungeons and Dragons</p>
+            
+            <a class="card_title title-white" href="/HTML/HomepageDND.html">Dungeons and Dragons</a>
+            
           </div>
         </div>
         
-        <div class="card 3">
+        <div class="card 3" onmouseover="Hover3()" onmouseout="out()">
           <div class="card_image">
             <img src="/Assets/Res.png" />
           </div>
           <div class="card_title  title-white">
-            <p>Resume</p>
+            <a class="card_title title-white" href="/HTML/Res.html">Resume</a>
           </div>
         </div>
           
-          <div class="card 4">
-          <div class="card_image">
+          <div class="card 4"onmouseover="Hover4()" onmouseout="out()">
+          <div class="card_image" >
             <img src="/Assets/Pro.png" />
             </div>
           <div class="card_title title-white">
-            <p>Projects</p>
+            <a class="card_title title-white" href="/HTML/Projects.html">Projects</a>
           </div>
           </div>
         
         </div>
+        <div class= description id="Description"></div>
   </section>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="JS/MainJ.js"></script>
 </body>
 </html>
